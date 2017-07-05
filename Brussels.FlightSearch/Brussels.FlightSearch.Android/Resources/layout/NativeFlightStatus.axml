@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="255dp"
+    android:layout_width="345dp"
+    android:background="@drawable/flight_details_background"
+    android:id="@+id/gridLayout1"
+    android:rowCount="3"
+    android:columnCount="3">
+    <GridLayout
+        android:layout_height="85dp"
+        android:layout_width="115dp"
+        android:layout_column="0"
+        android:layout_row="0">
+        <ImageView
+            android:scaleType="center"
+            android:layout_gravity="center"
+            android:src="@drawable/takeoff"
+            android:id="@+id/imageView2" />
+    </GridLayout>
+    <GridLayout
+        android:layout_column="0"
+        android:layout_row="1"
+        android:layout_width="115dp"
+        android:layout_height="85dp"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+        <TextView
+            android:text="7:00"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/tvScheduleDepature"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF" />
+        <TextView
+            android:text="7:59"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/tvActualDepature"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp" />
+    </GridLayout>
+    <GridLayout
+        android:layout_column="0"
+        android:layout_row="2"
+        android:layout_width="110dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:text="BRUT"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/tvDepatureAirportCode"
+            android:layout_marginTop="15dp" />
+        <TextView
+            android:text="BRUSSELS"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/tvDepatureCity"
+            android:layout_marginBottom="15dp" />
+    </GridLayout>
+    <GridLayout
+        android:layout_column="1"
+        android:layout_row="1"
+        android:layout_width="110dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:src="@drawable/forward"
+            android:id="@+id/imageView3"
+            android:layout_gravity="center" />
+        <TextView
+            android:text="1:40"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/tvFlightTime"
+            android:layout_gravity="center" />
+    </GridLayout>
+    <GridLayout
+        android:layout_width="110dp"
+        android:layout_height="85dp"
+        android:layout_column="2"
+        android:layout_row="0">
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/landing"
+            android:id="@+id/imageView4" />
+    </GridLayout>
+    <GridLayout
+        android:layout_column="2"
+        android:layout_row="1"
+        android:layout_width="110dp"
+        android:layout_height="85dp"
+        android:layout_gravity="right"
+        android:orientation="vertical">
+        <TextView
+            android:text="8:40"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/tvScheduledArrivalTime"
+            android:layout_marginTop="10dp" />
+        <TextView
+            android:layout_gravity="center"
+            android:text="9:29"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/tvActualArrivalTime"
+            android:layout_marginBottom="20dp" />
+    </GridLayout>
+    <GridLayout
+        android:layout_column="2"
+        android:layout_row="2"
+        android:layout_width="110dp"
+        android:layout_height="85dp"
+        android:layout_gravity="right"
+        android:orientation="vertical">
+        <TextView
+            android:layout_gravity="center"
+            android:text="VIE"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/tvArrivalAirport"
+            android:layout_marginTop="10dp" />
+        <TextView
+            android:layout_gravity="center"
+            android:text="VIENNA"
+            android:textColor="#FFFFFF"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/tvArrivalCity"
+            android:layout_marginBottom="20dp" />
+    </GridLayout>
+</GridLayout>
